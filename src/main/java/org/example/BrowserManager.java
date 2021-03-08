@@ -19,11 +19,11 @@ public class BrowserManager extends Util {
 
         } else if (browser.equalsIgnoreCase("firefox"))
         {
-            System.setProperty("webdriver.gecko.driver", "src\\test\\resources\\BrowserDrivers\\geckodriver.exe");
+            System.setProperty("webdriver.gecko.driver", "src/test/resources/BrowserDrivers/geckodriver.exe");
             driver = new FirefoxDriver();
         } else if (browser.equalsIgnoreCase("ie"))
         {
-            System.setProperty("webdriver.ie.driver", "src\\test\\resources\\BrowserDrivers\\IEDriverServer.exe");
+            System.setProperty("webdriver.ie.driver", "src/test/resources/BrowserDrivers/IEDriverServer.exe");
             //creating ie object to open ie browser
             driver = new InternetExplorerDriver();
         } else
